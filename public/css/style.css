@@ -1,0 +1,89 @@
+/* Amarillo: #EAC926;
+Azul: #03264C;
+Celeste: #1259c3;
+Gris oscuro: #666;
+Gris claro: #ebebeb;
+Verde: #39b54a; */
+
+/* Tipografías
+Familia: 'Roboto'
+Nos envían esta demo de cómo cargar fuentes de Google Fonts. Además
+podemos consultar el siguiente recurso aquí, para más detalle. */
+
+/* Tamaños Tipográficos
+Cuerpos de texto: 12px
+Titulares (Basado en tu última visita/Ofertas): 24px
+Precios: 18px
+Descuentos: 16px
+Descripciones: 16px */
+
+h1{
+    text-align: center;
+}
+header{
+    background-color: #eac926;
+}
+img{
+    width: 50%;
+    height:20%;
+}
+a{
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    color:#000;
+}
+ul{
+    padding-left: 0;
+}
+li{
+    list-style: none;
+}
+article{
+    margin: 5%;
+}
+/*quiero que todos las etiquetas p dentro de un article su alineacion sea justificada*/
+article {
+    color: #666;
+    text-align: center;
+}
+h3{
+    color:#666;
+    font-family: 'Roboto', sans-serif;
+    margin:0;
+}
+.icon-footer{
+    color:#1259c3;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+.fa-bars{
+    color:white;
+    padding: 10px;
+    background-color:#1259c3;
+    border-radius: 5px;
+}
+.burger-menu{
+    display: flex;
+    justify-content: center;
+}
+.logo-busqueda{
+    padding: 10px;
+}
+.info-cuotas{
+    text-align: center;
+    padding: 5px 15px;
+}
+span, p{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+}
+.p-precios{
+    font-size: 18px;
+}
+.p-descuentos{
+    font-size: 16px;
+}
+.p-descripcion{
+    font-size: 16px;
+}
