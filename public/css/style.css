@@ -16,7 +16,10 @@ Titulares (Basado en tu última visita/Ofertas): 24px
 Precios: 18px
 Descuentos: 16px
 Descripciones: 16px */
-
+*{
+    margin: 0;
+    padding: 0;
+}
 h1{
     text-align: center;
 }
@@ -34,6 +37,7 @@ a{
 }
 ul{
     padding-left: 0;
+    margin-bottom: 20px;
 }
 li{
     list-style: none;
@@ -60,6 +64,7 @@ h3{
     color:white;
     padding: 10px;
     background-color:#1259c3;
+    margin-bottom: 10px;
     border-radius: 5px;
 }
 .burger-menu{
