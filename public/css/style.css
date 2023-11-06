@@ -244,11 +244,22 @@ h3 {
 
 /* tablet */
 @media (min-width:361px) {
+    .main-nav-bar{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
     .left-nav-bar{
-        width: 50%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 40%;
     }
     .rigth-nav-bar{
-        width: 50%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 40%;
     }
     .articulos{
         display: flex;
@@ -262,11 +273,6 @@ h3 {
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }
     
-    .main-nav-bar {
-        display: flex;
-        flex-direction: row;
-    }
-
     .main-header-top-bar {
         display: flex;
         flex-direction: row;
@@ -278,10 +284,6 @@ h3 {
     }
     .copy-header{
         width: 30%;
-    }
-    .main-nav-bar ul {
-        display: flex;
-        justify-content: center;
     }
     .span-descripcion {
         display: block;
