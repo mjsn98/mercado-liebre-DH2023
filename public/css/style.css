@@ -1,29 +1,12 @@
-/* Amarillo: #EAC926;
-Azul: #03264C;
-Celeste: #1259c3;
-Gris oscuro: #666;
-Gris claro: #ebebeb;
-Verde: #39b54a; */
-
-/* Tipografías
-Familia: 'Roboto'
-Nos envían esta demo de cómo cargar fuentes de Google Fonts. Además
-podemos consultar el siguiente recurso aquí, para más detalle. */
-
-/* Tamaños Tipográficos
-Cuerpos de texto: 12px
-Titulares (Basado en tu última visita/Ofertas): 24px
-Precios: 18px
-Descuentos: 16px
-Descripciones: 16px */
 * {
-    margin:0;
-    padding:0;
-    /* box-sizing: border-box; */
+    box-sizing: border-box;
 }
 
 body {
     font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ebebeb;
 }
 
 ul {
@@ -33,17 +16,17 @@ ul {
 
 main {
     width: 90%;
-    margin:0 5%;
+    margin: 0 5%;
     margin-top: 10px;
+    
 }
 
-h1 {
-    text-align: center;
-}
-
-img {
-    width: 50%;
-    height: 20%;
+.article-img img{
+    display: block;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+    width: 100%;
 }
 
 span,
@@ -54,6 +37,7 @@ p {
 }
 
 article {
+    position: relative;
     background-color: #fff;
     color: #464646;
     text-align: center;
@@ -65,6 +49,20 @@ h3 {
     color: #666;
     font-family: 'Roboto', sans-serif;
     margin: 0;
+}
+
+.articulos{
+    display: flex;
+    flex-direction: column;
+}
+.iconos {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.titulares {
+    font-size: 24px;
+    color:#666;
 }
 
 .copy-header {
@@ -82,8 +80,16 @@ h3 {
     padding: 4px;
 }
 
+.div-logo {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    margin-left: 10px;
+}
+
 .logo {
-    max-width:200px;
+    height: 34px;
+    width: 134px;
 }
 
 .main-nav-bar {
@@ -98,37 +104,78 @@ h3 {
     text-decoration: none;
     color: #222222;
     display: inline-block;
-    font-size: 17px;
+    font-size: 10px;
 }
 
 .main-header-top-bar {
     display: flex;
     flex-direction: column;
 }
-.home-banner img{
+
+.home-banner img {
     width: 100%;
 }
+
 .header-top-search-logo {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 10px;
 }
 
 .detalle-producto {
+    position: relative;
     border-top: solid 1px #ebebeb;
     padding: 15px;
 }
 
+.detalle-producto>.iconos {
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+    color: #34b349;
+}
+.precio-descuento{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.span-precios {
+    font-size: 18px;
+    width: 30%;
+    text-align: left;
+}
+
+.span-descuentos {
+    width: 70%;
+    font-size: 16px;
+    color: #34b349;
+    text-align: center;
+}
+.span-descripcion {
+    font-size: 16px;
+    display: none;
+}
 .search-bar {
     display: flex;
     align-items: center;
-    width: 60%;
+    width: 50%;
 }
 
 #input-search-bar {
     border: none;
     outline: none;
     width: 100%;
+    height: 35px;
     padding: 5px 20px 5px 5px;
     border-radius: 5px;
 }
@@ -175,54 +222,83 @@ h3 {
     text-align: center;
 }
 
+.left-nav-bar li {
+    padding-right: 10px;
+}
+
+.rigth-nav-bar li {
+    padding-right: 10px;
+}
+
 .info-cuotas {
     text-align: center;
     padding: 5px 15px;
 }
 
-.p-precios {
-    font-size: 18px;
-}
-
-.p-descuentos {
-    font-size: 16px;
-    color: #34b349;
-}
-
-.p-descripcion {
-    font-size: 16px;
-    display: none;
-}
-
-.fa-truck {
-    color: #34b349;
-}
 
 /* tablet */
 @media (min-width:361px) {
-    
+    .left-nav-bar{
+        width: 50%;
+    }
+    .rigth-nav-bar{
+        width: 50%;
+    }
+    .articulos{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+    }
     article {
+        width: 40%;
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }
-
-    .main-nav-bar {
-        display: flex;
-        justify-content: space-between;
+    .precio-descuento{
+        flex-direction: column;
+        align-items: start;
 
     }
-    .main-header-top-bar{
+    .span-precios {
+        font-size: 18px;
+        width: 30%;
+        text-align: left;
+        margin-right: 8px;
+    }
+    
+    .span-descuentos {
+        width: 70%;
+        font-size: 16px;
+        color: #34b349;
+        text-align: left;
+    }
+    .main-nav-bar {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .main-header-top-bar {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
     }
+    .header-top-search-logo{
+        width: 70%;
+        margin: 0;
+    }
+    .copy-header{
+        width: 30%;
+    }
     .main-nav-bar ul {
         display: flex;
+        justify-content: center;
     }
-
-    .p-descripcion {
+    .span-descripcion {
         display: block;
+        text-align: left;
     }
-
+    
     .hamburger-button {
         display: none;
     }
@@ -230,18 +306,35 @@ h3 {
 
 /* destop */
 @media (min-width:769px) {
-    .main-header-top-bar{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-    .header-top-search-logo{
+
+    .header-top-search-logo {
         display: flex;
         width: 70%;
         justify-content: space-around;
     }
-    .copy-header{
+
+    .copy-header {
         max-width: 30%;
     }
-    
+
+    .articulos{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+    }
+    .main-nav-bar a{
+        font-size:14px;
+    }
+
+    article {
+        width: 20%;
+    }
+    .precio-descuento{
+        flex-direction: row;
+    }
+    .precio-descuento span{
+        margin-right: 0;
+    }
+
 }

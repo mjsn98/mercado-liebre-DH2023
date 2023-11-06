@@ -1,13 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prueba</title>
-    <link rel="stylesheet" href="/public/css/stylePrueba.css">
+    <title>Formulario de Cliente</title>
 </head>
 <body>
-    <div class="rectangulo">Rectangulo</div>
-    <div class="rectangulo2">Rectangulo 2</div>
+
+<h2>Formulario de Creación de un Cliente</h2>
+
+<form action="/submit_client_form" method="post">
+    <label for="fname">Nombre Completo:</label><br>
+    <input type="text" id="fname" name="fname" required><br>
+    
+    <label for="address">Dirección:</label><br>
+    <input type="text" id="address" name="address" required><br>
+    
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" required><br>
+    
+    <input type="submit" value="Crear">
+    <input type="reset" value="Cancelar">
+</form>
+
 </body>
 </html>
