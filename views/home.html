@@ -7,6 +7,7 @@
     <title>Mercado Liebre</title>
     <!-- estilos -->
     <link rel="stylesheet" href="/public/css/style.css">
+    <link rel="stylesheet" href="/public/css/styleHome.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
     <script src="https://kit.fontawesome.com/f4d1904851.js" crossorigin="anonymous"></script>
     <!-- fuentes -->
@@ -20,11 +21,15 @@
         <div class="main-header-top-bar">
             <div class="header-top-search-logo">
                 <div class="div-logo">
-                    <img class="logo" src="/public/images/logo-mercado-liebre.svg" alt="logo mercado liebre">
+                    <a href="/"><img class="logo" src="/public/images/logo-mercado-liebre.svg"
+                            alt="logo mercado liebre"></a>
                 </div>
-                <div class="search-bar">
-                    <input type="text" name="search-bar" id="input-search-bar" placeholder="Buscar productos, marcas">
-                    <i class="fa-solid fa-magnifying-glass"></i>
+                <div class="container-bar-search">
+                    <form class="search-bar" action="" method="post">
+                        <input type="text" name="search-bar" id="input-search-bar"
+                            placeholder="Buscar productos, marcas">
+                        <button type="submit" class="btn-search"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </form>
                 </div>
             </div>
 
@@ -44,14 +49,14 @@
                 <li><a href="#">Ayuda</a></li>
             </ul>
             <ul class="rigth-nav-bar">
-                <li><a href="#">Creá tu cuenta <i class="fa-regular fa-id-card"></i></a></li>
-                <li><a href="#">Ingresá <i class="fa-solid fa-right-to-bracket"></i></a></li>
-                <li><a href="#">Mis compras <i class="fa-solid fa-basket-shopping"></i></a></li>
+                <li><a href="/registro">Creá tu cuenta <i class="fa-regular fa-id-card"></i></a></li>
+                <li><a href="/login">Ingresá <i class="fa-solid fa-right-to-bracket"></i></a></li>
+                <li><a href="/miscompras">Mis compras <i class="fa-solid fa-basket-shopping"></i></a></li>
             </ul>
         </nav>
 
     </header>
-    
+
     <div class="home-banner">
         <img src="/public/images/img-home-banner.jpg" alt="banner-mercado-liebre" srcset="">
     </div>

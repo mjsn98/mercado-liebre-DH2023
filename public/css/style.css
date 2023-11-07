@@ -89,7 +89,8 @@ h3 {
 
 .logo {
     height: 34px;
-    width: 134px;
+    width: 100%;
+    min-width: 80px;
 }
 
 .main-nav-bar {
@@ -170,9 +171,10 @@ h3 {
 .search-bar {
     display: flex;
     align-items: center;
-    width: 50%;
 }
-
+.container-bar-search{
+    width: 100%;
+}
 #input-search-bar {
     border: none;
     outline: none;
@@ -182,9 +184,10 @@ h3 {
     border-radius: 5px;
 }
 
-.fa-magnifying-glass {
+.btn-search {
     font-size: 15px;
-    background-color: #fff;
+    background-color:transparent;
+    border: 0;
     color: #6e6a6a;
     margin-left: -25px;
     padding-left: 5px;
@@ -196,8 +199,7 @@ h3 {
     background-color: #fff;
     color: #464646;
     text-align: center;
-    margin: 10px 10px;
-    margin-bottom: 10px;
+    padding: 15px 0;
 }
 
 .copyrigth {
@@ -299,7 +301,7 @@ h3 {
     .precio-descuento span{
         margin-right: 0;
         text-align: center;
-        font-size: 14px;
+        font-size: 12px;
     }
     .precio-descuento .span-descuentos{
         width: 60%;

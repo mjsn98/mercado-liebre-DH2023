@@ -1,0 +1,25 @@
+/*Login*/
+.main-login{
+    background-color: #ebebeb;
+    height: 50vh;
+}
+.container-login{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.form-login{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+.form-login input{
+    border: 0;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+.btn-enviar{
+    background-color:#1259c3;
+    color:white;
+}
