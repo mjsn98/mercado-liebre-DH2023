@@ -163,9 +163,14 @@ h3 {
     color: #34b349;
     text-align: center;
 }
+.descripcion{
+    visibility: hidden;
+}
+article:hover .descripcion {
+    visibility: visible;
+}
 .span-descripcion {
     font-size: 16px;
-    display: none;
     color: #666873;
 }
 .search-bar {
@@ -243,6 +248,9 @@ h3 {
     margin-left: 5px;
 }
 
+.icon-footer:hover{
+    transform: rotate(-90deg);
+}
 
 /* tablet */
 @media (min-width:361px) {
@@ -257,11 +265,17 @@ h3 {
         justify-content: center;
         width: 40%;
     }
+    .left-nav-bar li{
+        text-align: center;
+    }
     .rigth-nav-bar{
         display: flex;
         flex-direction: row;
         justify-content: center;
         width: 40%;
+    }
+    .rigth-nav-bar li{
+        text-align: center;
     }
     .articulos{
         display: flex;
@@ -273,6 +287,9 @@ h3 {
     article {
         width: 40%;
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    article:hover {
+        box-shadow: 0px 0px 30px rgb(100, 100, 100);
     }
     
     .main-header-top-bar {
@@ -286,10 +303,6 @@ h3 {
     }
     .copy-header{
         width: 30%;
-    }
-    .span-descripcion {
-        display: block;
-        text-align: left;
     }
     
     .hamburger-button {
@@ -306,6 +319,18 @@ h3 {
     .precio-descuento .span-descuentos{
         width: 60%;
         margin-left: 10px;
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+    }
+    footer>section{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .detalles-footer:hover .icon-footer{
+        color: #34B349;
     }
 }
 
