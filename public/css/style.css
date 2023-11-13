@@ -248,8 +248,9 @@ article:hover .descripcion {
     margin-left: 5px;
 }
 
-.icon-footer:hover{
+.fa-truck:hover{
     transform: rotate(-90deg);
+    transition: 1s;
 }
 
 /* tablet */
@@ -289,7 +290,8 @@ article:hover .descripcion {
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }
     article:hover {
-        box-shadow: 0px 0px 30px rgb(100, 100, 100);
+        box-shadow: 0px 0px 40px rgb(29, 29, 29);
+        transition: 1s;
     }
     
     .main-header-top-bar {
