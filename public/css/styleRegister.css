@@ -48,12 +48,25 @@ main {
 
 .btn-send-reset {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     margin-bottom: 15px;
+}
+.btn-send-reset>input{
+    width: 20%;
+}
+.btn-send-reset>.btn-red:hover{
+    background-color: firebrick;
+    color:#ffffff;
+    transition:all,0.5s;
+}
+.btn-send-reset>.btn-blue:hover{
+    background-color: rgb(20, 61, 105);
+    color:#ffffff;
+    transition:all,0.5s;
 }
 
 .btn-blue {
-    background-color: rgb(34, 104, 178);
+    background-color: rgb(88, 115, 145);
     padding: 8px;
     color: rgb(255, 255, 255);
     border: 0;
@@ -61,7 +74,7 @@ main {
 }
 
 .btn-red {
-    background-color: firebrick;
+    background-color: rgb(168, 97, 97);
     padding: 8px;
     color: rgb(255, 255, 255);
     border: 0;
