@@ -19,14 +19,26 @@ main {
     margin-bottom: 10px;
     border-radius: 10px;
 }
-
-.input-registro:focus {
+.input-registro:invalid {
     color: #191919;
     outline: 0;
     box-shadow: 0 0 0 0.25rem rgba(253, 13, 13, 0.64);
 }
+.input-registro:valid {
+    color: #191919;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgba(8, 96, 26, 0.64);
+}
 
-.feedback {
+.input-registro:focus .feedback{
+    display: block;
+}
+
+.feedback{
+    color: darkred;
+    display: none;
+}
+.feedback, .feedback-confirmedPassword {
     color: darkred;
     display: none;
 }
@@ -60,7 +72,7 @@ main {
     transition:all,0.5s;
 }
 .btn-send-reset>.btn-blue:hover{
-    background-color: rgb(20, 61, 105);
+    background-color: rgb(0, 83, 171);
     color:#ffffff;
     transition:all,0.5s;
 }

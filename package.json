@@ -7,8 +7,13 @@
     "ejs": "^3.1.9"
   },
   "scripts": {
-    "start":"node app.js",
-    "test":"nodemon app.js"
-  }
-  
+    "start": "node app.js",
+    "test": "nodemon app.js"
+  },
+  "name": "mercadoliebre",
+  "version": "1.0.0",
+  "main": "app.js",
+  "author": "",
+  "license": "ISC",
+  "description": ""
 }
